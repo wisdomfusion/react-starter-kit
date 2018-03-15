@@ -2,5 +2,8 @@
 
 ## packages
 
-- React
-- Ant Design
+- react
+- antd
+- react-router-dom
+- react-redux
+- axios
