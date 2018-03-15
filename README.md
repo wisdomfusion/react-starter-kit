@@ -2,11 +2,11 @@
 
 ## packages installed
 
-- react
-- antd
-- react-router-dom
-- react-redux
-- axios
+- [react](https://reactjs.org/)
+- [antd](https://ant.design/) for UI Components
+- [react-router-dom](https://reacttraining.com/react-router/) for App Routing
+- [react-redux](https://redux.js.org/) for state management
+- [axios](https://github.com/axios/axios) for Http Requests
 
 ## quick start
 
