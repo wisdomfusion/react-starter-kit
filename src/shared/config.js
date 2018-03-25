@@ -1,6 +1,14 @@
 const config = {
+    app: {
+        domain: process.env.REACT_APP_DOMAIN
+    },
     api: {
-        url_prefix: 'http://www.pixseed.com/partner/api'
+        url_prefix: process.env.REACT_APP_URL_PREFIX
+    },
+    data: {
+        pagination: {
+            per_page: 20
+        }
     }
 };
 

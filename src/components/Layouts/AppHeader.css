@@ -1,0 +1,21 @@
+.top-nav {
+    padding: 0 20px;
+}
+
+.top-nav .brand {
+    float: left;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.top-nav .user-name {
+    margin-right: 10px;
+}
+
+.top-nav .user-name.not-login {
+    color: red;
+}
+
+.top-nav .system-tray {
+    float: right;
+}

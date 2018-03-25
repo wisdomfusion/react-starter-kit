@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import AppRoutes from './AppRoutes';
-
+import Routes from './routes';
 import './App.css';
 
 export default class App extends Component {
-  render() {
-    return (
-      <AppRoutes />
-    );
-  }
+    render() {
+        return (
+            <Routes />
+        );
+    }
 }

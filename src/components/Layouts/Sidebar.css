@@ -1,0 +1,66 @@
+.ant-menu-dark.ant-menu-inline .ant-menu-item {
+    font-size: 1.2em;
+}
+
+.ant-menu-dark.ant-menu-inline .ant-menu-item .fa.icon + span {
+    margin-left: 8px;
+}
+
+.ant-menu-inline-collapsed > .ant-menu-item {
+    font-size: 2em;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    padding: 0!important;
+}
+
+.ant-menu-inline-collapsed > .ant-menu-item .fa.icon + span {
+    max-width: 0;
+    display: inline-block;
+    opacity: 0;
+}
+
+.ant-layout-footer {
+    padding: 0 16px 10px;
+}
+
+.logo {
+    text-align: center;
+    padding: 12px 0 16px;
+    color: #ffffffa6;
+}
+
+.ant-menu-item a {
+    color: #ffffffa6;
+}
+
+.ant-menu-item a:hover,
+.ant-menu-item a:focus {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bottom-bar {
+    position: absolute;
+    bottom: 0;
+}
+
+.trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    color: #ffffffa6;
+    transition: color .3s;
+}
+
+.trigger:hover {
+    color: #1890ff;
+}
+
+.fa.icon {
+    display: inline-block;
+    font-style: normal;
+    text-align: center;
+    text-transform: none;
+}

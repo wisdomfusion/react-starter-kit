@@ -1,0 +1,31 @@
+.login-form-box {
+    height: 100%;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    overflow: hidden;
+}
+
+.login-form {
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    width: 360px;
+    margin: 10% auto 0;
+    padding: 32px 32px 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.login-form h1 {
+    font-size: 1.6em;
+    text-align: center;
+    text-shadow: 0 0 2px #999;
+    margin-bottom: 16px;
+}
+
+.login-form .copyright {
+    text-align: center;
+}
+
+.login-form-submit {
+    width: 100%;
+}

@@ -1,0 +1,29 @@
+#root {
+  height: 100%;
+}
+
+.page-head {
+  height: 36px;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.fa.icon + span {
+  margin-left: 5px;
+}
