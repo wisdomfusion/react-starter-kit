@@ -6,7 +6,7 @@ import ReduxThunk from 'redux-thunk';
 import { LocaleProvider } from 'antd';
 import zh_CN from 'antd/lib/locale-provider/zh_CN';
 import 'moment/locale/zh-cn';
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 import App from './App';
 import rootReducer from './store/reducers';
@@ -25,4 +25,4 @@ const app = (
 );
 
 ReactDOM.render(app, document.getElementById('root'));
-registerServiceWorker();
+// registerServiceWorker();
