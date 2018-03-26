@@ -17,8 +17,12 @@ dotenv:
 ```
 cat .env.development.local
 DOMAIN=http://www.example.test.com
+BASENAME=
+
+PUBLIC_URL=$BASENAME
 REACT_APP_DOMAIN=$DOMAIN
-REACT_APP_URL_PREFIX=$DOMAIN/api
+REACT_APP_URL_PREFIX=$DOMAIN/basename/api
+REACT_APP_BASENAME=$BASENAME
 ```
 
 start up:

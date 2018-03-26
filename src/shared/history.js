@@ -1,3 +1,8 @@
 import createHistory from 'history/createBrowserHistory';
+import config from './config';
 
-export default createHistory();
+const history = createHistory({
+    basename: config.app.basename
+});
+
+export default history;
