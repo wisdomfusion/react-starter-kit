@@ -1,10 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import faArrowAltCircleLeft from '@fortawesome/fontawesome-free-regular/faArrowAltCircleLeft';
-import faArrowAltCircleRight from '@fortawesome/fontawesome-free-regular/faArrowAltCircleRight';
-import faHome from '@fortawesome/fontawesome-free-solid/faHome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './Sidebar.css';
 
@@ -30,13 +27,13 @@ export default class AppFooter extends React.Component {
                 </div>
                 <Menu theme="dark" mode="inline">
                     <Menu.Item key="1">
-                        <FontAwesomeIcon className="fa icon" icon={faHome} />
+                        <FontAwesomeIcon className="fa icon" icon="home" />
                         <span><Link to="/">HOME</Link></span>
                     </Menu.Item>
                 </Menu>
                 <div className="bottom-bar">
                     <span className="trigger" onClick={this.toggle}>
-                        <FontAwesomeIcon className="fa icon" icon={this.state.collapsed ? faArrowAltCircleRight : faArrowAltCircleLeft} />
+                        <FontAwesomeIcon className="fa icon" icon={this.state.collapsed ? 'arrow-alt-circle-right' : 'arrow-alt-circle-left'} />
                     </span>
                 </div>
             </Sider>

@@ -9,6 +9,7 @@ module.exports = function override(config, env) {
 
   config = rewireLess.withLoaderOptions({
     modifyVars: { "@primary-color": "#1DA57A" },
+    javascriptEnabled: true, // enable inline JavaScript in Less
   })(config, env);
 
   config.output.publicPath = process.env.REACT_APP_BASENAME ? process.env.REACT_APP_BASENAME : '';

@@ -5,9 +5,7 @@ import { Redirect } from 'react-router-dom';
 import sessionService from '../../services/session.service';
 import * as sessionActions from '../../store/actions/session.actions';
 
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import faUser from '@fortawesome/fontawesome-free-solid/faUser';
-import faLock from '@fortawesome/fontawesome-free-solid/faLock';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Form, Input, Button } from 'antd';
 import './Login.css';
@@ -53,7 +51,7 @@ class Login extends React.Component {
                         <h1>Login Form</h1>
                         <Form.Item>
                             <Input size="large"
-                                   prefix={<FontAwesomeIcon icon={faUser} />}
+                                   prefix={<FontAwesomeIcon icon="user" />}
                                    placeholder="Admin user name"
                                    name="name"
                                    value={this.state.credentials.name}
@@ -62,7 +60,7 @@ class Login extends React.Component {
                         </Form.Item>
                         <Form.Item>
                             <Input size="large"
-                                   prefix={<FontAwesomeIcon icon={faLock} />}
+                                   prefix={<FontAwesomeIcon icon="lock" />}
                                    type="password"
                                    placeholder="password here"
                                    name="password"
