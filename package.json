@@ -13,7 +13,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.2.0",
     "@fortawesome/free-solid-svg-icons": "^5.2.0",
     "@fortawesome/react-fontawesome": "^0.1.2",
-    "antd": "^3.8.1",
+    "antd": "^3.8.2",
     "axios": "^0.18.0",
     "enquire-js": "^0.2.1",
     "history": "^4.7.2",
