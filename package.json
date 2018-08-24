@@ -18,7 +18,7 @@
     "enquire-js": "^0.2.1",
     "history": "^4.7.2",
     "moment": "^2.22.2",
-    "path-to-regexp": "^2.2.1",
+    "path-to-regexp": "^2.3.0",
     "prop-types": "^15.6.2",
     "rc-drawer-menu": "^1.1.0",
     "react": "^16.4.2",
@@ -27,7 +27,7 @@
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "1.1.5",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0"
   },
