@@ -2,12 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import sessionService from '../../services/session.service';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import './AppHeader.css';
 import * as sessionActions from '../../store/actions/session.actions';
 
-import { Layout } from 'antd';
+import { Layout, Icon } from 'antd';
 const { Header } = Layout;
 
 class AppHeader extends React.Component {
@@ -36,7 +34,7 @@ class AppHeader extends React.Component {
                         }
                         <span className="sign-out">
                             <a role="button" onClick={this.onLogout}>
-                                <FontAwesomeIcon className="fa icon" icon="sign-out-alt"/>Logout
+                                <Icon type="logout" theme="outlined" /> Logout
                             </a>
                         </span>
                     </div>
