@@ -1,18 +1,19 @@
-module.exports = function override(config, env) {
-  const { injectBabelPlugin } = require('react-app-rewired');
-  const rewireLess = require('react-app-rewire-less');
+const { override, fixBabelImports, addLessLoader  } = require('customize-cra');
 
-  config = injectBabelPlugin(
-    ['import', { libraryName: 'antd', libraryDirectory: 'es', style: true }],
-    config
-  );
-
-  config = rewireLess.withLoaderOptions({
-    modifyVars: { "@primary-color": "#1DA57A" },
-    javascriptEnabled: true, // enable inline JavaScript in Less
-  })(config, env);
-
+const addCustomize = () => config => {
   config.output.publicPath = process.env.REACT_APP_BASENAME ? process.env.REACT_APP_BASENAME : '';
-  
   return config;
 }
+
+module.exports = override(
+  fixBabelImports('import', {
+    libraryName: 'antd',
+    libraryDirectory: 'es',
+    style: true,
+  }),
+  addLessLoader({
+    javascriptEnabled: true,
+    modifyVars: { '@primary-color': '#1DA57A' },
+  }),
+  addCustomize(),
+);

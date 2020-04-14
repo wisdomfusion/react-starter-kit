@@ -71,7 +71,7 @@ class Login extends React.Component {
                         <Form.Item>
                             <Button type="primary" size="large" htmlType="submit" className="login-form-submit" loading={this.props.logining}>登录</Button>
                         </Form.Item>
-                        <p className="copyright">&copy;2018 copyright here</p>
+                        <p className="copyright">copyright here</p>
                     </Form>
                 </div>
             );
