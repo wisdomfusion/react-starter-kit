@@ -5,7 +5,10 @@ import { Redirect } from 'react-router-dom';
 import sessionService from '../../services/session.service';
 import * as sessionActions from '../../store/actions/session.actions';
 
-import { Form, Input, Button, Icon } from 'antd';
+import { faUser, faLock } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { Form, Input, Button } from 'antd';
 import './Login.css';
 
 class Login extends React.Component {
@@ -49,7 +52,7 @@ class Login extends React.Component {
                         <h1>Login Form</h1>
                         <Form.Item>
                             <Input size="large"
-                                   prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                                   prefix={<FontAwesomeIcon icon={faUser} style={{ color: 'rgba(0,0,0,.25)' }} />}
                                    placeholder="Admin user name"
                                    name="name"
                                    value={this.state.credentials.name}
@@ -58,7 +61,7 @@ class Login extends React.Component {
                         </Form.Item>
                         <Form.Item>
                             <Input size="large"
-                                   prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                                   prefix={<FontAwesomeIcon icon={faLock} style={{ color: 'rgba(0,0,0,.25)' }} />}
                                    type="password"
                                    placeholder="password here"
                                    name="password"

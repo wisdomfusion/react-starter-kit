@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Routes from './routes';
 
-import './App.css';
+import './App.less';
 
 export default class App extends Component {
     render() {

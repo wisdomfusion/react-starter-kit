@@ -53,3 +53,16 @@ project structure:
     - index.js
     - *.reduser.js
 - routes.js
+
+## Font Awesome
+
+[Free Font Awesome icons](https://fontawesome.com/icons?d=listing&m=free)
+
+```
+import { faUser, faLock } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+...
+
+<FontAwesomeIcon icon={faUser} />
+```

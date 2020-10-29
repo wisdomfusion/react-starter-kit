@@ -5,7 +5,10 @@ import sessionService from '../../services/session.service';
 import './AppHeader.css';
 import * as sessionActions from '../../store/actions/session.actions';
 
-import { Layout, Icon } from 'antd';
+import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { Layout } from 'antd';
 const { Header } = Layout;
 
 class AppHeader extends React.Component {
@@ -34,7 +37,7 @@ class AppHeader extends React.Component {
                         }
                         <span className="sign-out">
                             <a role="button" onClick={this.onLogout}>
-                                <Icon type="logout" theme="outlined" /> Logout
+                                <FontAwesomeIcon icon={faSignOutAlt} /> Logout
                             </a>
                         </span>
                     </div>

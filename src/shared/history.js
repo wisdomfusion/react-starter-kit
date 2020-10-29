@@ -1,7 +1,7 @@
-import createHistory from 'history/createBrowserHistory';
-import config from './config';
+import { createBrowserHistory } from 'history';
+import config from '../config';
 
-const history = createHistory({
+const history = createBrowserHistory({
     basename: config.app.basename
 });
 

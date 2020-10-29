@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 
 import './Sidebar.css';
 
-import { Layout, Menu, Icon } from 'antd';
+import { faHome, faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Layout, Menu } from 'antd';
 const { Sider } = Layout;
 
 export default class AppFooter extends React.Component {
@@ -25,13 +27,13 @@ export default class AppFooter extends React.Component {
                 </div>
                 <Menu theme="dark" mode="inline">
                     <Menu.Item key="1">
-                        <Icon type="home" theme="outlined" />
+                        <FontAwesomeIcon icon={faHome} />
                         <span><Link to="/">HOME</Link></span>
                     </Menu.Item>
                 </Menu>
                 <div className="bottom-bar">
                     <span className="trigger" onClick={this.toggle}>
-                        <Icon type={this.state.collapsed ? 'right-circle' : 'left-circle'} theme="outlined" />
+                        <FontAwesomeIcon icon={this.state.collapsed ? faChevronCircleRight : faChevronCircleLeft} />
                     </span>
                 </div>
             </Sider>

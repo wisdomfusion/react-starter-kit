@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import config from 'shared/config';
+import config from '../config';
 
 class HttpClient {
     constructor() {
